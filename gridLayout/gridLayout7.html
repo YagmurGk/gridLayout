@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid Layout 7</title>
+    <style>
+        #container {
+            display: grid;
+            grid-template-areas:
+                "nav header header header"
+                "nav article article article"
+                "nav ads ads ads "
+                "nav footer footer footer";
+            grid-template-columns: 1fr 4fr;
+            height: 1000px;
+            grid-template-rows: 100px 3fr 1fr 100px;
+            grid-gap: 10px;
+        }
+
+        .eleman1 {
+            grid-area: header;
+        }
+
+        .eleman2 {
+            grid-area: nav;
+        }
+
+        .eleman3 {
+            grid-area: article;
+        }
+
+        .eleman4 {
+            grid-area: ads;
+        }
+
+        .eleman5 {
+            grid-area: footer;
+        }
+
+        #container>div {
+            background-color: slategrey;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <div class="eleman1">Header</div>
+        <div class="eleman2">Nav</div>
+        <div class="eleman3">Article</div>
+        <div class="eleman4">Ads</div>
+        <div class="eleman5">Footer</div>
+
+    </div>
+    </head>
+
+    <body>
+    </body>
+
+</html>
